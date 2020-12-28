@@ -1,0 +1,84 @@
+/**** base style ****/
+
+* {
+	box-sizing: border-box;
+	margin:0
+	padding:0;
+}
+h1 {
+	font-family: serif;, Verdana, sans-serif  ;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	
+	}
+#container1 {background-color: grey;
+	position: relative;
+	padding: 0px 0px 10px 10px;
+	margin: 10px 5px 10px 10px;
+	border: 2px solid;
+	float: left;
+	}
+#container2 {background-color: grey;
+	position: relative;
+	padding: 0px 0px 10px 10px;
+	margin: 10px 5px 10px 10px;
+	border: 2px solid;
+	float: left;
+	}
+#container3 {background-color: grey;
+	position: relative;
+	padding: 0px 0px 10px 10px;
+	margin: 10px 5px 10px 10px;
+	border: 2px solid;
+	float: left;
+	}
+
+#chicken {background-color:#ff03aa; }
+#beef {background-color: red; }
+#sushi {background-color: yellow;}
+p {font-size: 150%;
+margin:0 0 5px 5px;
+padding: 2px 20px 2px 20px;
+text-align: center;
+float: right;
+border-width: 0 0 2px 2px;
+
+border-style: solid ;
+width: 180px;
+}
+section {clear: right;
+	padding-top: 0;
+padding-right: 0;
+margin-right: 0;}
+
+/****  Large devices only  ****/
+@media (min-width:992px){
+	#container1{ width:30%; }
+	#container2{ width:30%; }
+	#container3{ width:30%; }
+}
+/****  Small devices only  ****/
+
+@media (max-width:767px) {
+
+	#container1 { width:97%; 
+		height: 130px;}
+	#container2 { width:97%;height: 130px; }
+	#container3 { width:97%; height: 130px;}
+
+}
+
+/****  Medium devices only  ****/
+@media (min-width:768px)and (max-width: 991px){
+	#container1, #container2, #container3 {
+		float: left;
+	}
+	#container1 { width:47%; 
+		height: 130px;}
+	#container2 { width:47%;height: 130px; }
+	#container3 { width:96%; height: 130px;}
+}
+
+
+
